@@ -23,6 +23,7 @@ RUN git clone https://github.com/genome/pindel.git
 RUN cd pindel && ./INSTALL /opt/samtools/samtools-1.2/htslib-1.2.1
 RUN cp /opt/pindel/pindel/pindel* /usr/local/bin/
 
+COPY ./config /
 
 RUN date
 
